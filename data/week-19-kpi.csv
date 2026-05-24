@@ -1,2 +1,7 @@
- placeholder
-
+platform,campaign_name,campaign_objective,week,budget_spent_eur,impressions,clicks,ctr_pct,cpl_eur,leads,conversion_rate_pct,notes
+Meta Ads,Awareness_IT_Bootcamp_Q2,Awareness,2026-W19,4500,318450,5764,1.81,18.52,243,4.22,Targeting broad 18-35 IT cold
+Meta Ads,Conversion_IT_Bootcamp_Q2,Conversion,2026-W19,6200,144820,4198,2.90,14.19,437,10.41,Lookalike 1% buyer last 90d
+Meta Ads,Retargeting_IT_Bootcamp,Conversion,2026-W19,1800,42180,1850,4.39,9.78,184,9.95,Site visitors last 14d
+Google Ads,Search_Brand_Bootcamp,Search,2026-W19,2800,38240,3122,8.16,9.79,286,9.16,Brand keywords protective
+Google Ads,Search_Generic_Bootcamp,Search,2026-W19,5400,89500,2685,3.00,21.43,252,9.39,High-intent generic kw
+Google Ads,PerformanceMax_Bootcamp,PMax,2026-W19,5100,289400,4889,1.69,22.27,229,4.68,Asset group EdTech audience
