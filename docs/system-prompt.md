@@ -1,4 +1,4 @@
-# System Prompt — AI LeadGen Performance Reporter
+# System Prompt - AI LeadGen Performance Reporter
 
 ## Role
 
