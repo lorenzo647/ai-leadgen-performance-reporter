@@ -1,4 +1,4 @@
-# Benchmark KPI — EdTech Bootcamp Italia 2026
+# Benchmark KPI - EdTech Bootcamp Italia 2026
 
 > Riferimenti di mercato per la valutazione delle performance di campagne lead generation 
 > nel settore EdTech bootcamp italiano. Aggiornato Q2 2026.
