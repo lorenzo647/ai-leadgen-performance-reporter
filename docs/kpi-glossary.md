@@ -1,4 +1,4 @@
-# Glossario KPI — Digital Marketing & Lead Generation
+# Glossario KPI - Digital Marketing & Lead Generation
 
 > Definizioni operative dei KPI utilizzati nel monitoraggio delle campagne 
 > di lead generation per scale-up EdTech.
