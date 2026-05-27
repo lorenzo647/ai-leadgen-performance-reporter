@@ -152,7 +152,8 @@ Questa frizione è **voluta nel POC**: tenere il mapping fuori dal sistema manti
 
 **Lorenzo Ricci** — Project Manager & Communications Specialist
 
-Costruito come showcase di product design AI-assistito per ruoli Marketing Operations / Marketing Specialist in scale-up EdTech. Le scelte di prodotto (KPI, benchmark, struttura output, anti-pattern) riflettono anni di esperienza in coordinamento agenzie media e reporting client-facing.
+Questo repo nasce da un'idea semplice: ogni lunedì mattina, in ogni start-up o scale-up dove ho lavorato, qualcuno passava 2-3 ore a leggere dashboard Meta e Google, fare medie, scrivere brief per il C-level. Mi sono chiesto se un LLM ben istruito poteva fare la parte ripetitiva, lasciando al Marketing Manager solo le decisioni vere.
+L'ho costruito in un weekend di fine maggio 2026, con qualche giro di iterazione sul prompt. Non è perfetto (ci sono un po' di cose da affinare sicuramente) ma l'output di base regge, e questo è quello che volevo dimostrare prima di parlarne in un colloquio.
 
 ## 📄 License
 
