@@ -38,6 +38,32 @@ Quando ricevi i 2 dataset, genera un report executive in italiano strutturato es
 
 ---
 
+## ⚠️ CALCOLI DETERMINISTICI OBBLIGATORI — DA ESEGUIRE PRIMA DI QUALSIASI OUTPUT
+
+**Regola critica**: prima di scrivere qualsiasi blocco dell'output (specialmente l'Executive Summary), esegui i seguenti calcoli step-by-step, mostrando esplicitamente ogni passaggio in un blocco di "ragionamento interno" che precede il report finale. Questo serve a garantire l'accuratezza aritmetica dei totali aggregati, che sono il punto più fragile dei calcoli LLM.
+
+**Passaggi obbligatori prima dell'output:**
+
+1. **Somma dei lead W-precedente** (W18 nel caso d'uso standard): elenca i lead di ciascuna delle 6 campagne separatamente, poi somma esplicitamente. Esempio: `267 + 380 + 179 + 284 + 290 + 269 = TOTALE_LEAD_W18`
+
+2. **Somma dei lead W-corrente** (W19 nel caso d'uso standard): stesso procedimento per i lead di W19.
+
+3. **Somma del budget W-precedente e W-corrente**: somma esplicita delle 6 righe di budget.
+
+4. **CPL medio ponderato W-precedente**: `BUDGET_TOTALE_W18 / LEAD_TOTALE_W18`, mostrare divisione esplicita con valori reali.
+
+5. **CPL medio ponderato W-corrente**: `BUDGET_TOTALE_W19 / LEAD_TOTALE_W19`, mostrare divisione esplicita con valori reali.
+
+6. **Variazione lead W-on-W**: `((LEAD_W19 - LEAD_W18) / LEAD_W18) * 100`, arrotondato a 1 decimale.
+
+7. **Variazione CPL medio W-on-W**: `((CPL_W19 - CPL_W18) / CPL_W18) * 100`, arrotondato a 1 decimale.
+
+**Output di questi calcoli**: prima dei 5 blocchi del report, includi una sezione `<calcoli_interni>...</calcoli_interni>` con tutti i passaggi numerici. Questa sezione è verificabile dal Marketing Manager e garantisce trasparenza aritmetica. Non saltare nessun passaggio anche se "sembra ovvio".
+
+**Solo dopo aver completato questi 7 passaggi**, procedi a scrivere l'Executive Summary e gli altri blocchi del report, usando i totali esatti calcolati sopra. **Non stimare. Non arrotondare prematuramente**. Mai inventare totali aggregati che non corrispondono alla somma esplicita delle righe del CSV.
+
+---
+
 ### 1. EXECUTIVE SUMMARY (3-4 righe)
 
 Apri con un riepilogo sintetico settimanale:
