@@ -84,10 +84,12 @@ ai-leadgen-performance-reporter/
 │   ├── week-19-kpi.csv          # Dati settimana corrente (6 campagne)
 │   └── week-18-kpi.csv          # Dati settimana baseline per confronto W-on-W
 ├── examples/
-│   ├── 01-claude-system-prompt-loaded.png    # Setup: prompt caricato
-│   ├── 02-input-data-csv.png                 # Input: CSV incollati
-│   ├── 03-executive-report-output.png        # Output: report generato
-│   └── 04-recommendations-detail.png         # Output: dettaglio raccomandazioni
+│   ├── README.md                                     # Indice della cartella examples
+│   ├── sample-output-W19.md                          # Output completo in markdown (W18 → W19)
+│   ├── 01-claude-system-prompt-loaded.png            # Setup: system prompt caricato
+│   ├── 02-input-data-csv.png                         # Input: CSV W18 + W19 + inizio calcoli
+│   ├── 03-calcoli-interni-executive-summary.png      # Output: calcoli deterministici + Executive Summary
+│   └── 04-report-output-detail.png                   # Output: Analisi campagne + Top 3 Insights
 ├── README.md
 └── LICENSE
 ```
