@@ -131,6 +131,24 @@ Alcune decisioni di prodotto che ho preso durante la costruzione, e perché:
 
 ---
 
+## 🔌 Nota sull'integrazione con le piattaforme
+
+Lo schema CSV di esempio (12 colonne) è progettato come **standard intermedio** tra il Marketing Manager e Claude. I CSV esportati direttamente da Meta Ads Manager, Google Ads e Looker Studio hanno colonne con nomi diversi (es. "Amount Spent (EUR)" vs `budget_spent_eur`, "Cost" vs `budget_spent_eur`), formato settimana non ISO (es. "May 13 - May 19, 2026" vs `2026-W19`), e separatori currency variabili.
+
+**Conseguenza operativa:** prima di incollare i dati in Claude, è necessario un **mapping una tantum** (rinomina colonne + normalizzazione settimana) che richiede 2-3 minuti la prima volta e poi può essere automatizzato con:
+
+- Un foglio Sheets template con formule di pulizia
+- Uno script bash/Python di normalizzazione
+- L'integrazione API diretta prevista in **v1.1** della roadmap (wrapper Python con Meta Ads + Google Ads Reports API)
+
+Questa frizione è **voluta nel POC**: tenere il mapping fuori dal sistema mantiene il prompt portabile e adattabile a schemi diversi (es. CRM proprietari, dashboard interne). In versione production il mapping è invisibile all'utente finale.
+
+Scorri in fondo
+Commit message: docs: add integration note clarifying CSV mapping from Meta/Google/Looker exports
+Clicca "Commit changes" (bottone verde)
+
+---
+
 ## 👤 Built by
 
 **Lorenzo Ricci** — Project Manager & Communications Specialist
