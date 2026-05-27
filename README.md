@@ -65,7 +65,7 @@ L'output è strutturato in 5 blocchi obbligatori:
 
 1. Apri [https://claude.ai](https://claude.ai) e inizia una nuova conversazione
 2. Copia il contenuto di [`docs/system-prompt.md`](docs/system-prompt.md) e incollalo come primo messaggio
-3. Copia il contenuto di [`data/week-19-kpi.csv`](data/week-19-kpi.csv) e [`data/week-18-kpi.csv`](data/week-18-kpi.csv) e incollali come secondo messaggio
+3. Copia il contenuto di [`data/week-18-kpi.csv`](data/week-18-kpi.csv) (baseline) e poi [`data/week-19-kpi.csv`](data/week-19-kpi.csv) (settimana corrente) e incollali come secondo messaggio
 4. Claude genera l'executive report in 15-20 secondi
 
 Vedi screenshot in [`examples/`](examples/) per il flusso completo.
