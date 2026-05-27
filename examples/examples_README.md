@@ -8,9 +8,9 @@ This folder contains screenshots demonstrating the AI LeadGen Performance Report
 
 2. **`02-input-data-csv.png`** — User provides 2 weeks of structured CSV data covering 6 campaigns across Meta Ads and Google Ads (Awareness, Conversion, Retargeting, Search Brand, Search Generic, Performance Max).
 
-3. **`03-executive-report-output.png`** — Claude generates the executive report in Italian following the structured format: Executive Summary with total spend, leads, weighted CPL, overall trend — followed by per-campaign analysis with W-on-W variations, verdict icon, and strategic insight.
+3. **`03-calcoli-interni-executive-summary.png`** — Claude generates the report following the structured format: first a mandatory `<calcoli_interni>` chain-of-thought block with all aggregate totals computed step-by-step (deterministic arithmetic), then the Executive Summary in Italian with total spend, leads, weighted CPL, and overall trend.
 
-4. **`04-recommendations-detail.png`** — Operational recommendations section: specific, measurable, time-bound actions for top performers (scaling strategies) and underperforming campaigns (optimization steps with target KPIs).
+4. **`04-report-output-detail.png`** — Per-campaign analysis with W-on-W variations, verdict icon, strategic insight + Top 3 Insights of the week. Operational recommendations with specific, measurable, time-bound actions are available in the full `sample-output-W19.md` in this folder.
 
 ## Sample output highlights
 
@@ -24,5 +24,5 @@ For the provided dataset, the system identifies:
 
 1. Open Claude at https://claude.ai in a new conversation (Free plan is sufficient)
 2. Paste the content of `/docs/system-prompt.md` as the first message
-3. Paste the content of `/data/week-19-kpi.csv` and `/data/week-18-kpi.csv` as the second message
+3. Paste the content of `/data/week-18-kpi.csv` (baseline) and then `/data/week-19-kpi.csv` (current week) as the second message
 4. Claude produces the full executive report following the structured format in 15-25 seconds
