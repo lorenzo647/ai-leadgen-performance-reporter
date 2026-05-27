@@ -125,7 +125,8 @@ Alcune decisioni di prodotto che ho preso durante la costruzione, e perché:
 ## ⚠️ Limitazioni note
 
 - **POC con dati simulati**: i CSV di esempio sono dati realistici ma fittizi. Non posso usare dati reali per ragioni di confidenzialità dei progetti su cui lavoro attualmente.
-- **Calcoli numerici**: Claude è affidabile su calcoli percentuali e variazioni di base, ma per analisi statistiche più complesse (regressioni, attribution modeling) servirebbe un layer di analisi dedicato.
+- **Calcoli numerici**: Claude è preciso al 100% sui calcoli per singola campagna (CPL, CTR, conversion rate, variazioni W-on-W). Sui **totali aggregati** (lead totali, CPL medio ponderato) gli LLM tendono a stimare invece di sommare, con scostamenti potenziali dell'1-3%. Per mitigare questo limite, il system prompt include una sezione di **chain-of-thought obbligatoria** (`<calcoli_interni>`) che forza Claude a eseguire ogni passaggio aritmetico esplicitamente prima di scrivere il report finale. In versione production (v1.1 roadmap), i totali aggregati sarebbero calcolati deterministicamente via Python e iniettati nel prompt, eliminando completamente il margine di errore.
+- **Analisi statistiche avanzate**: per attribution modeling multi-touch, regressioni, o cohort analysis serve un layer di analisi dedicato (es. pandas/SQL). Il tool è progettato per reporting executive, non per data science.
 - **Benchmark calibrati su EdTech bootcamp Italia 2026**: vanno ricalibrati per altri verticali (es. EdTech B2B, scale-up SaaS) o altri mercati.
 - **Lingua output**: ottimizzato per italiano professionale. L'output in altre lingue richiede aggiustamenti al prompt.
 
