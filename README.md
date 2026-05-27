@@ -143,10 +143,6 @@ Lo schema CSV di esempio (12 colonne) è progettato come **standard intermedio**
 
 Questa frizione è **voluta nel POC**: tenere il mapping fuori dal sistema mantiene il prompt portabile e adattabile a schemi diversi (es. CRM proprietari, dashboard interne). In versione production il mapping è invisibile all'utente finale.
 
-Scorri in fondo
-Commit message: docs: add integration note clarifying CSV mapping from Meta/Google/Looker exports
-Clicca "Commit changes" (bottone verde)
-
 ---
 
 ## 👤 Built by
